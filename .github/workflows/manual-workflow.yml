@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+    inputs:
+      enviroment:
+       description: "choose the enviroment"
+       required: true
+       default: "staging"
+       type:  choice
+       options:
+           - staging
+           - production
+jobs:
+    deployment:
+      runs-on: ubuntu-latest
+      steps:
+       - run: echo "the deploy on input ${{inputs.enviroment}}"
