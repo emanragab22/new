@@ -5,14 +5,14 @@ on:
        branches:
          - main
          - "release/**"
-    paths:
+       paths:
          - "src/**"
  
     pull_request:
         branches:
           - main
           - "release/**"
-    paths:
+        paths:
           - "src/**"
 
 jobs:
