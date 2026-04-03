@@ -6,4 +6,4 @@ jobs:
      runs-on: ubuntu-latest
      steps:
        - name : type incident
-         run: echo : "incident reported !"
+         run: echo "incident reported !"
