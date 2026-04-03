@@ -10,11 +10,11 @@ on:
       - main
       - "release/**"    
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout-repo
-        uses: actions/checkout@v6.0.2
-      - name: run-tests
-        run: npm test
-        run: ls -la
+   test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout-repo
+          uses: actions/checkout@v6.0.2
+        - name: run-tests
+          run: npm test
+        
