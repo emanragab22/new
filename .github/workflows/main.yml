@@ -1,19 +1,8 @@
-
+name: first worflow
 on:
   push:
-    branches:
-      - main
-      - "release/**"
-    paths:
-      - "src/**"
-
-  pull_request:
-    branches:
-      - main
-      - "release/**"
-    paths:
-      - "src/**"
-
+   branches:
+     - main
 jobs:
     example-jobs:
           runs-on: ubuntu-latest
