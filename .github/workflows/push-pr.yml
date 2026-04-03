@@ -1,14 +1,18 @@
+
 on:
   push:
     branches:
       - main
       - "release/**"
-  paths:
+    paths:
       - "src/**"
-  pull_requests:
+  pull_request:
     branches:
       - main
-      - "release/**"    
+      - "release/**"
+    paths:
+      - "src/**"
+  
 jobs:
    test:
       runs-on: ubuntu-latest
