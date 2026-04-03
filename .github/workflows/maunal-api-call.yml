@@ -5,5 +5,5 @@ jobs:
    hansdle_incident :
      runs-on: ubuntu-latest
      steps:
-       - name : type incident
+       - name: type incident
          run: echo "incident reported !"
