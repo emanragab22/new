@@ -4,8 +4,8 @@ on:
       - main
       - "release/**"
   path:
-    - "src/**"
-  pull_requewest:
+      - "src/**"
+  pull_request:
     branches:
       - main
       - "release/**"    
