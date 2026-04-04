@@ -1,0 +1,12 @@
+on:
+ workflow_dispatch:
+jobs:
+   example:
+    runs-on: ubuntu-latest
+    steps:
+    - name: set API_KEY
+      run: echo "API_KEY=GT%^HG" >> $GITHUB_ENV
+    - name: print secret API_KEY
+      run: |
+          echo ""::add-mask::$API_KEY""
+          echo "the API KEY is $API_KEY"
