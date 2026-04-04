@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+jobs:
+  job_5:
+     runs-on: ubuntu-latest
+     steps:
+       - run: |
+           npm install
+           npm run build 
+         working-directory: ./temp
+         shell: bash
+       - run: print %ENV
+         shell: perl {0}
+         
