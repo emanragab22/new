@@ -4,10 +4,10 @@ jobs:
     Example:
       runs-on: ubuntu-latest
       steps:
-        - run: |
-            deprecated: true
-            if: [[deprecated]] ; then
-            echo "::warning::Deprecated function is found"
-            fi
+      - run: |
+           deprecated: true
+           if: [[deprecated]]; then
+           echo "::warning::Deprecated function is found"
+           fi
             
             
