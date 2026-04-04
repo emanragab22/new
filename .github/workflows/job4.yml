@@ -1,0 +1,10 @@
+on:
+ workflow_dispatch:
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+    - name: set API key
+      run: echo "APIKEY=fdgd5" >> $GITHUB_ENV
+    - name: print API KEY
+      run: echo "API KEY $APIKEY"
