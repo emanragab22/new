@@ -5,11 +5,12 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name : check if file exsits
+      
        run: |
-         if[ -f config.yml]; then
-           echo ""::debug::config.yml exsits""
-         else
-           echo ""::error::config.yml not exsit""
-           exit 1
-         fi
-         
+          if [ -f config.yml ]; then
+            echo "::debug::config.yml exists"
+          else
+            echo "::error::config.yml does not exist"
+            exit 1
+          fi
+
